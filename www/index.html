@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="cordova-1.6.0.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/jquerymx-3.2.custom.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/fixtures/data.js"></script>
+    <script src="assets/js/global.js"></script>
+  </head>
+  <body onload="onBodyLoad()">
+	
+	<div class="container">
+
+      	<div class="row">
+
+      		<div class="span12">
+
+      			<div id="map_canvas"></div>
+
+      			<img src="http://placehold.it/90x90" class="main-img thumb">
+
+      			<div id="home"></div>
+
+          	</div>
+
+          	<div class="span12">
+
+				<ul class="nav nav-tabs">
+				  <li class="active"><a href="#pictures" data-toggle="tab">Pictures</a></li>
+				  <li><a href="#features" data-toggle="tab">Features</a></li>
+				  <li><a href="#locations" data-toggle="tab">Locations</a></li>
+				</ul>
+				
+				<div class="tab-content">
+				  <div class="tab-pane active" id="pictures">
+
+				  	<ul id="rooms" class="list"></ul>
+
+				  </div>
+				  <div class="tab-pane" id="features">
+				  	
+				  	<div id="features_list"></div>
+
+				  </div>
+				  <div class="tab-pane" id="locations">...</div>
+				</div>
+
+          	</div>
+
+		</div>
+          
+	</div>
+
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<a class="close" data-dismiss="modal">×</a>
+			<h3>Modal header</h3>
+		</div>
+		<div class="modal-body">
+			<img src="http://placehold.it/268x150">
+    		
+    		<label>Choose a Room</label>
+    		<form class="form-horizontal">
+    		  <div class="control-group">
+    		      <label class="control-label" for="multiSelect">Multicon-select</label>
+    		      <div class="controls">
+    		        <select>
+    		          <option>Living Room</option>
+    		          <option>Bedroom</option>
+    		          <option>Master Bedroom</option>
+    		          <option>Kitchen</option>
+    		          <option>Dining Room</option>
+    		        </select>
+    		      </div>
+    		    </div>
+    		</form>
+  		</div>
+  		<div class="modal-footer">
+    		<a href="#" class="btn">Close</a>
+    		<a href="#" class="btn btn-primary">Save changes</a>
+  		</div>
+	</div>
+      
+  </body>
+</html>

@@ -1,0 +1,56 @@
+.container { margin-top:20px; }
+
+/** Bootstrap Customizations */
+
+input { width:96%; }
+
+.btn {
+    width:100%;
+    -webkit-box-sizing:border-box;
+}
+
+.modal .btn { width:auto; }
+
+
+
+
+/**
+ *  Home View
+ */
+
+#map_canvas {
+	height:90px;
+	margin:-20px 0 30px -20px;
+	width:320px;
+}
+
+.thumb {
+	border:3px solid #fff;
+	-webkit-box-shadow:0 1px 2px rgba(0,0,0,.3);
+}
+
+.main-img {
+	position: absolute;
+	top:20px;
+}
+
+.title { margin-bottom:20px; text-align:center; }
+
+.list {
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+	overflow: hidden;
+}
+
+.list li {
+	display:inline;
+	padding:0 5px;
+}
+
+.list img {
+    display:block;
+}
+
+.modal { display:none; }
